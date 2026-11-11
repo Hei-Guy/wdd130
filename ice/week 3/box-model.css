@@ -1,0 +1,48 @@
+/*css land, css */
+
+
+
+
+
+/*element selector*/
+h1 {color: blue;
+margin: 100px;
+
+text-align: center;
+margin-bottom: 200px;
+}
+
+
+p{
+   
+    border-width: 5px;
+    border-style: solid;
+    border-color: pink;
+    padding: 25px;
+}
+
+/* an id selector, the most used*/
+
+#product-title { 
+    color: red;
+
+}
+
+/* a class selector, used on more than one element */
+.subtitle-text {
+    color: green;
+    font-size: 32px
+}
+
+/* Decentcy select a paragraph inside a div*/
+
+div p{
+    color: purple
+}
+div p span {
+    display: block;
+    font-weight:bolder;
+    font-size: 48px;
+}
+
+

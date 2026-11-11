@@ -1,0 +1,234 @@
+/* ==========================================================================
+   HEI-GUY COMEDY PORTAL - CENTERED DESIGN
+   ========================================================================== */
+
+/* --- 1. Global Reset & Body Centering --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f0f2f5; /* Light gray background to make panels pop */
+    padding: 40px 20px;
+    
+    /* These three lines handle the main website centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* --- 2. Shared Layout for All Main Panels --- */
+header, nav, main, footer {
+    width: 100%;
+    max-width: 800px; /* Limits width so it doesn't stretch too wide */
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+}
+
+/* --- 3. Typography --- */
+h1, h2, h3 {
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; border-bottom: 3px solid #ffcc00; padding-bottom: 8px; }
+h3 { font-size: 1.4rem; margin-top: 1.5rem; }
+
+p {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+}
+
+/* --- 4. Header & Branding (Centered Layout) --- */
+header {
+    display: flex;
+    flex-direction: column; /* Stacks logo on top of text for a centered look */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    background: linear-gradient(135deg, #111111, #222222);
+    color: #ffffff;
+    padding: 35px 20px;
+}
+
+header h1 {
+    color: #ffcc00; /* Comedy yellow */
+    margin-bottom: 0;
+}
+
+header img {
+    border-radius: 50%;
+    border: 3px solid #ffcc00;
+    background-color: #ffffff;
+}
+
+/* --- 5. Navigation (Centered Items) --- */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Prevents breaking on mobile */
+    font-weight: 600;
+    padding: 15px;
+}
+
+nav a {
+    color: #0066cc;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #0066cc;
+}
+
+/* --- 6. Main Content Area --- */
+main {
+    padding: 35px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 25px;
+    margin-bottom: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+main a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* --- 7. Centered/Clean Table Layout --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    background: #ffffff;
+}
+
+table, th, td {
+    border: 1px solid #e2e8f0 !important;
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8fafc;
+    font-weight: bold;
+    color: #475569;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* --- 8. Centered Feedback Form --- */
+form {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 1.5rem auto 0 auto; /* Centers the form inside the main block */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 450px;
+}
+
+label {
+    font-weight: 600;
+    color: #475569;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #ffcc00;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.3);
+}
+
+button[type="submit"] {
+    background-color: #111111;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    align-self: center; /* Centers the button inside the form */
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffcc00;
+    color: #111111;
+}
+
+/* --- 9. Footer --- */
+footer {
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+    padding: 10px 0;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+footer hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin-bottom: 20px;
+}
+
+/* --- 10. Mobile Adjustments --- */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    header, nav, main, footer {
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
+
+   

@@ -1,0 +1,55 @@
+/* Add your CSS here to style the photography portfolio*/
+
+/* Go here to get fonts: https://fonts.google.com/*/
+/* Select a font, and copy it's @import statement. Paste at the top of this file.*/
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Roboto+Slab:wght@100..900&display=swap');
+/* Flexbox cheat sheet: https://flexbox.malven.co/*/
+
+h1{
+    font-family: "Original+Surfer";
+    text-align: center;
+    font-size: 4em;
+
+}
+
+h2 {
+    font-family: "lora" ;
+    text-align: center;
+}
+
+nav{
+    background-color:teal;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 25px;
+    border-bottom: 4px solid color(black red green blue)
+}
+
+nav a {
+    color: bisque;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+nav a :hover {
+color: black;
+text-decoration: underline;
+background-color: blue;
+padding-top: 10px;
+}
+img{
+    max-width: 200px;
+}
+
+
+#img-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 1400px;
+    flex-wrap: wrap;
+    margin-left: 30%;
+    margin-right: 30%;
+    gap: 10px;
+}
